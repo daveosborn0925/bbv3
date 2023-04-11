@@ -53,7 +53,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'I want you to act as a virtual assistant for a real estate agent. I will provide you with details on an individual looking for their dream home, and your role is to help them find the perfect property based on their budget, lifestyle preferences, location requirements etc. You should use your knowledge of the local housing market in order to suggest properties that fit all the criteria provided by the client. My first request is “I need help finding a single story family house near downtown san jose, ca.'
+			'I want you to act as a virtual assistant for a real estate investor. I will provide you with details on an individual looking for their dream investment property, and your role is to help them find the perfect property based on their budget, investing preferences, location requirements etc. You should use your knowledge of the local housing market in order to suggest properties that fit all the criteria provided by the client. My first request is “I need help finding a single story family house near downtown bakersfield, ca.'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
